@@ -161,7 +161,7 @@ print("Longest Substring Length:", longest_substring("abcabcbb"))
 # Complexity:
 # Time: O(n)
 # Space: O(n)
-# sliding window mastery
+
 
 
 
@@ -193,7 +193,6 @@ print("Is Anagram:", is_anagram("listen", "silent"))
 # Complexity:
 # Time: O(n)
 # Space: O(n)
-# Shows: frequency counting
 
 
 
@@ -217,8 +216,8 @@ print("Reversed Sentence:", reverse_words("the sky is blue"))
 # Complexity:
 # Time: O(n)
 
-# Shows: string handling clarity
 
+# Two Sum (Hash Map)
 class Solution(object):
     def twoSum(self, nums, target):
         num_map = {}
@@ -229,3 +228,4 @@ class Solution(object):
             num_map[num] = i
 result = two_sum([2, 7, 11, 15], 9)
 print(result)
+# Time Complexity = O(n)
