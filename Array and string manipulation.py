@@ -1,4 +1,4 @@
-# Reverse Array (Two Pointer)
+# 1) Reverse Array (Two Pointer)
 arr = [1,2,3,4,5]
 
 l, r = 0, len(arr)-1
@@ -12,7 +12,7 @@ print(arr)
 
 
 
-#Find Largest Element
+# 2) Find Largest Element
 arr = [10, 20, 5, 8]
 
 max_val = arr[0]
@@ -25,7 +25,7 @@ print(max_val)
 
 
 
-# Rotate an Array by d - Counterclockwise or Left
+# 3) Rotate an Array by d - Counterclockwise or Left
 def leftRotate(arr, d):
     n = len(arr)
     d = d % n   # handle d > n
@@ -37,7 +37,7 @@ print(leftRotate(arr, d))
 
 
 
-# Missing and Repeating in an Array
+# 4) Missing and Repeating in an Array
 def findNumbers(arr):
     n = len(arr)
     freq = [0] * (n + 1)
@@ -60,7 +60,7 @@ print(findNumbers([3, 1, 3]))
 print(findNumbers([4, 3, 6, 2, 1, 1]))
 
 
-# Missing ranges of numbers
+# 5) Missing ranges of numbers
 def missing_ranges(arr, lower, upper):
     result = []
     
@@ -102,7 +102,7 @@ def combine_strings(a, b):
     return short + long + short
 
 
-#  Problem:
+# 6) Problem:
 # Given an array, return indices of two numbers that add up to target.
 # Example:
 # Input: nums = [2,7,11,15], target = 9  
@@ -121,19 +121,16 @@ def two_sum(nums, target):
             return [seen[diff], i]
         
         seen[nums[i]] = i
-
 # CALL FUNCTION
 result = two_sum([2, 7, 11, 15], 9)
-
 # PRINT OUTPUT
 print(result)
-
 # Complexity:
 # Time: O(n)
 # Space: O(n)
 
 
-# Longest Substring Without Repeating Characters
+# 7) Longest Substring Without Repeating Characters
 # Problem:
 # Find length of longest substring with all unique characters.
 #  Example:
@@ -165,7 +162,7 @@ print("Longest Substring Length:", longest_substring("abcabcbb"))
 
 
 
-# Valid Anagram
+# 8) Valid Anagram
 # Problem:
 # Check if two strings are anagrams.
 #  Example:
@@ -196,7 +193,7 @@ print("Is Anagram:", is_anagram("listen", "silent"))
 
 
 
-# Reverse Words in a String
+# 9) Reverse Words in a String
 #  Problem:
 # Reverse order of words (not characters).
 # Example:
@@ -204,20 +201,17 @@ print("Is Anagram:", is_anagram("listen", "silent"))
 # Output: "blue is sky the"
 #  Approach:
 # Split → Reverse → Join
-
 def reverse_words(s):
     words = s.split()
     words.reverse()
     return " ".join(words)
-
 # CALL + PRINT
 print("Reversed Sentence:", reverse_words("the sky is blue"))
-
 # Complexity:
 # Time: O(n)
 
 
-# Two Sum (Hash Map)
+# 10) Two Sum (Hash Map)
 class Solution(object):
     def twoSum(self, nums, target):
         num_map = {}
